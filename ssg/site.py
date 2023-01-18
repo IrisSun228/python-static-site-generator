@@ -11,4 +11,6 @@ class Site:
         directory.mkdir(parents=True,exist_ok=True)
 
 
-    )
+    def build(self):
+        self._dest.mkdir(parents=True,exist_ok=True)
+
