@@ -8,4 +8,7 @@ class Site:
 
     def create_dir(self,path):
         directory=self._dest+"/"+self._source.relative_to(self._dest)
+        directory.mkdir(parents=True,exist_ok=True)
 
+
+    )
