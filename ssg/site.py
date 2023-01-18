@@ -6,4 +6,6 @@ class Site:
         self._source=Path()
         self._dest=Path()
 
+    def create_dir(self,path):
+        directory=self._dest+"/"+self._source.relative_to(self._dest)
 
