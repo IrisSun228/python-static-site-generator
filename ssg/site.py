@@ -4,8 +4,8 @@ import os
 
 class Site:
     def __init__(self, source, dest):
-        self._source = Path()
-        self._dest = Path()
+        self.source = Path()
+        self.dest = Path()
 
     def create_dir(self, path):
         directory = self.dest + "/" + self.source.relative_to(self.dest)
